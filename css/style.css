@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet');
+@import "../css/bootstrap.css";
 .container {
   max-width: 1064px;
 }
 
-header li {
+header ul li {
   font: 16px/26px "Roboto", sans-serif;
   font-weight: 700;
 }
@@ -45,48 +47,96 @@ header li {
   display: inline-block;
 }
 .humanity .first-img {
-  position: absolute;
   max-width: 599px;
   height: 521px;
-  left: 60px;
-  top: -60px;
+}
+@media screen and (min-width: 992px) {
+  .humanity .first-img {
+    left: 60px;
+    top: -70px;
+    position: absolute;
+  }
 }
 
 .logo {
   padding-left: 97px;
 }
 
-.circle {
+.guides .explain {
+  font: 36px/42px "Roboto", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 60px;
+}
+.guides .teaser {
+  margin-bottom: 47px;
+  font: 20px/23px "Roboto", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  max-width: 632px;
+}
+.guides .availability {
+  margin-bottom: 88px;
+  font: 20px/23px "Roboto", sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+.container {
+  margin-bottom: 240px;
+}
+.container .best-sellers {
+  margin-bottom: 52px;
+  font: 36px/42px "Roboto", sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+.container .cards {
+  max-width: 309px;
+  margin-bottom: 27px;
+}
+.container .card_h4 {
+  font: 17px/20px "Roboto", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 17px;
+}
+.container .card_p {
+  font: 17px/20px "Roboto", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.container .card_a {
+  font: 17px/20px "Roboto", sans-serif;
+  font-weight: 700;
+  text-decoration-line: underline;
+  color: #000000;
+}
+.container .circle {
   width: 70px;
   height: 70px;
   border-radius: 35px;
 }
-
-.light-blue {
+.container .light-blue {
   background: #D399FF;
 }
-
-.blue {
+.container .blue {
   background: #33D3BC;
 }
-
-.dark-blue {
+.container .dark-blue {
   background: #18A5C6;
 }
-
-.beige {
+.container .beige {
   background: #D38F62;
 }
-
-.red {
+.container .red {
   background: #F94C43;
 }
-
-.violet {
+.container .violet {
   background: #D399FF;
 }
-
-footer {
+.container footer {
   background-color: black;
 }
 

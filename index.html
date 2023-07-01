@@ -6,11 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thalby_bootstrap</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -18,7 +17,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light container">
         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ">
             <li class="nav-item">
                 <a class="nav-link">Shop</a>
             </li>
@@ -76,41 +75,43 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="container">
-            <div class="row text-center">
-                    <h3 class="col-12">Our guides explain countries and cultures.</h3>
-                <div class="col-12">
-                    <p>Are you curious about the world around you? Our guides are for smart
+     <section class="guides">
+         <div class="container">
+            <div class="row text-center justify-content-center">
+                    <h3 class="col-12 explain">Our guides explain countries and cultures.</h3>
+                <div class="col-12 col-lg-8">
+                    <p class="teaser">Are you curious about the world around you? Our guides are for smart
                         global citizens, world travelers and engaged residents who want to
                         gain a deeper understanding of the cultures and societies they care
                         about.
                     </p>
-                    <p>Available as ebooks here and on Amazon.</p>
+                    <p class="availability">Available as ebooks here and on Amazon.</p>
                 </div>
             </div>
             <div class="row text-center">
-                <h3 class="col-12">Our best sellers</h3>
+                <h3 class="col-12 best-sellers">Our best sellers</h3>
+                <div class="row text-center owl-carousel">
                 <div class="col-12 col-lg-4">
-                    <img src="images/image2.png" alt="img" />
-                    <h4>Thalby Guide to French Culture and Heritage</h4>
-                    <p>USD 6.99</p>
-                    <a href="#">Add to cart</a>
+                    <img class="cards" src="images/image2.png" alt="img" />
+                    <h4 class="card_h4">Thalby Guide to French Culture and Heritage</h4>
+                    <p class="card_p">USD 6.99</p>
+                    <a class="card_a" href="#">Add to cart</a>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <img src="images/image3.png" alt="img" />
-                    <h4>Thalby Guide to French People and Society</h4>
-                    <p>USD 6.99</p>
-                    <a href="#">Add to cart</a>
+                    <img class="cards" src="images/image3.png" alt="img" />
+                    <h4 class="card_h4">Thalby Guide to French People and Society</h4>
+                    <p class="card_p">USD 6.99</p>
+                    <a class="card_a" href="#">Add to cart</a>
                 </div>
                 <div class="col-12 col-lg-4">
-                <img src="images/image4.png" alt="img" />
-                <h4>Thalby Guide to German Culture and Heritage</h4>
-                <p>USD 6.99</p>
-                <a href="#">Add to cart</a>
+                <img class="cards" src="images/image4.png" alt="img" />
+                <h4 class="card_h4">Thalby Guide to German Culture and Heritage</h4>
+                <p class="card_p">USD 6.99</p>
+                <a class="card_a" href="#">Add to cart</a>
                 </div>
             </div>
-        </div>
+            </div>
+         </div>
     </section>
     <section>
         <div class="container">
@@ -283,6 +284,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<script src="js/owl.carousel.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

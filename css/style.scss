@@ -1,10 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet');
+@import "../css/bootstrap.css";
+$main_font: 'Roboto', sans-serif;
+$black_color: #000000;
+
+@mixin min-screen($res) {
+  @media screen and (min-width: $res) {
+    @content;
+  }
+}
+
 .container {
   max-width: 1064px;
 }
-header{
-  li{
-    font: 16px/26px 'Roboto', sans-serif;
-    font-weight: 700;
+header {
+  ul {
+    li {
+      font: 16px/26px $main_font;
+      font-weight: 700;
+    }
   }
 }
 .navbar-light .navbar-nav .nav-link {
@@ -18,63 +31,127 @@ header{
   padding: 90px 0;
   position: relative;
 }
-.humanity{
+.humanity {
   .humanity-h1 {
-    font: 60px/70px 'Roboto', sans-serif;
+    font: 60px/70px $main_font;
     font-weight: 700;
-    color: #000000;
+    color: $black_color;
     margin-bottom: 42px;
   }
+
   .humanity-h5 {
-    font: 24px/28px 'Roboto', sans-serif;
+    font: 24px/28px $main_font;
     font-weight: 400;
-    color: #000000;
+    color: $black_color;
     margin-bottom: 26px;
   }
+
   .shop-button {
-    font: 17px/20px 'Roboto', sans-serif;
+    font: 17px/20px $main_font;
     font-weight: 400;
     color: #FFFFFF;
-    background: #000000;
-    border: 1px solid #000000;
+    background: $black_color;
+    border: 1px solid $black_color;
     border-radius: 100px;
     padding: 7px 23px 9px;
     text-decoration: none;
     display: inline-block;
   }
+
   .first-img {
-    position: absolute;
     max-width: 599px;
     height: 521px;
-    left:60px;
-    top: -60px;
+    @include  min-screen(992px){
+      left: 60px;
+      top: -70px;
+      position: absolute;
+    }
   }
 }
+
 .logo{
   padding-left: 97px;
 }
-.circle {
-  width: 70px;
-  height: 70px;
-  border-radius: 35px;}
-.light-blue{
+.guides{
+  .explain{
+    font: 36px/42px $main_font;
+    font-weight: 700;
+    color: $black_color;
+    margin-top: 60px;
+  }
+  .teaser{
+    margin-bottom: 47px;
+    font: 20px/23px $main_font;
+    font-weight: 400;
+    color: $black_color;
+    max-width: 632px;
+  }
+  .availability {
+    margin-bottom: 88px;
+    font: 20px/23px $main_font;
+    font-weight: 400;
+    color: $black_color;
+  }
+}
+.container{
+  margin-bottom: 240px;
+  .best-sellers{
+    margin-bottom: 52px;
+    font: 36px/42px $main_font;
+    font-weight: 700;
+    color: $black_color;
+  }
+  .cards {
+    max-width: 309px;
+    margin-bottom: 27px;
+  }
+  .card_h4{
+    font: 17px/20px $main_font;
+    font-weight: 700;
+    color: $black_color;
+    margin-bottom: 17px;
+  }
+  .card_p {
+    font: 17px/20px $main_font;
+    font-weight: 400;
+    color: $black_color;
+    margin-bottom: 10px;
+  }
+  .card_a {
+    font: 17px/20px $main_font;
+    font-weight: 700;
+    text-decoration-line: underline;
+    color: $black_color;
+  }
+
+
+
+
+
+
+  .circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;}
+  .light-blue{
     background: #D399FF;
   }
-.blue {
+  .blue {
     background: #33D3BC;
   }
-.dark-blue{
+  .dark-blue{
     background: #18A5C6;
   }
-.beige{
+  .beige{
     background: #D38F62;
   }
-.red{
+  .red{
     background: #F94C43;
   }
-.violet{
+  .violet{
     background: #D399FF;
   }
-footer{
-  background-color: black;
+  footer{
+    background-color: black;
+  }
 }
