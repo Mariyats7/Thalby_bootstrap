@@ -61,14 +61,13 @@ header {
   .first-img {
     max-width: 599px;
     height: 521px;
-    @include  min-screen(992px){
+    @include min-screen(992px) {
       left: 60px;
       top: -70px;
       position: absolute;
     }
   }
 }
-
 .logo{
   padding-left: 97px;
 }
@@ -93,65 +92,192 @@ header {
     color: $black_color;
   }
 }
-.container{
+.cards-sellers {
   margin-bottom: 240px;
-  .best-sellers{
+
+  .best-sellers {
     margin-bottom: 52px;
     font: 36px/42px $main_font;
     font-weight: 700;
     color: $black_color;
   }
+
   .cards {
     max-width: 309px;
     margin-bottom: 27px;
   }
-  .card_h4{
+
+  .card_h4 {
     font: 17px/20px $main_font;
     font-weight: 700;
     color: $black_color;
     margin-bottom: 17px;
+    width: 156px;
   }
+
   .card_p {
     font: 17px/20px $main_font;
     font-weight: 400;
     color: $black_color;
     margin-bottom: 10px;
   }
+
   .card_a {
     font: 17px/20px $main_font;
     font-weight: 700;
     text-decoration-line: underline;
     color: $black_color;
   }
+}
+.people_cards {
+  .container {
+    max-width: 100%;
+  }
+}
+  .people_society {
+    background: rgba(204, 204, 204, 0.30);
 
+    h3 {
+      color: $black_color;
+      font: 36px/42px $main_font;
+      font-weight: 700;
+      padding-bottom: 31px;
+    }
 
+    p {
+      color: $black_color;
+      font: 36px/42px $main_font;
+      font-weight: 400;
+      padding-bottom: 40px;
+      width: 498px;
 
+    }
 
+    a {
+      color: $black_color;
+      font: 17px/20px $main_font;
+      font-weight: 700;
+      text-decoration-line: underline;
+    }
 
+    img {
+      padding-bottom: 51px;
+      padding-top: 76px;
+    }
+  }
 
+  .culture {
+    background: rgba(204, 204, 204, 0.60);
+
+    h3 {
+      color: $black_color;
+      font: 36px/42px $main_font;
+      font-weight: 700;
+      padding-bottom: 31px;
+    }
+
+    p {
+      color: $black_color;
+      font: 36px/42px $main_font;
+      font-weight: 400;
+      padding-bottom: 40px;
+      width: 513px;
+    }
+
+    a {
+      color: $black_color;
+      font: 17px/20px $main_font;
+      font-weight: 700;
+      text-decoration-line: underline;
+    }
+
+    img {
+      padding-bottom: 51px;
+      padding-top: 76px;
+    }
+  }
+
+  .politics {
+    background: rgba(204, 204, 204, 0.30);
+
+    h3 {
+      color: $black_color;
+      font: 36px/42px $main_font;
+      font-weight: 700;
+      padding-bottom: 31px;
+    }
+
+    p {
+      color: $black_color;
+      font: 36px/42px $main_font;
+      font-weight: 400;
+      padding-bottom: 40px;
+      max-width: 530px;
+    }
+
+    a {
+      color: $black_color;
+      font: 17px/20px $main_font;
+      font-weight: 700;
+      text-decoration-line: underline;
+    }
+
+    img {
+      padding-bottom: 51px;
+      padding-top: 76px;
+    }
+  }
+.unique {
+  color: $black_color;
+  font: 36px/42px $main_font;
+  font-weight: 400;
+  margin-bottom: 70px;
+  margin-top: 190px;
+}
+.text_circle{
+  color: $black_color;
+  font-size: 30px/35px $main_font;
+  font-weight: 700;
+  margin-bottom: 111px;
+}
   .circle {
     width: 70px;
     height: 70px;
-    border-radius: 35px;}
-  .light-blue{
+    border-radius: 35px;
+    margin-bottom: 26px;
+  }
+
+  .light-blue {
     background: #D399FF;
   }
+
   .blue {
     background: #33D3BC;
   }
-  .dark-blue{
+
+  .dark-blue {
     background: #18A5C6;
   }
-  .beige{
+
+  .beige {
     background: #D38F62;
   }
-  .red{
+
+  .red {
     background: #F94C43;
   }
-  .violet{
+
+  .violet {
     background: #D399FF;
   }
+
   footer{
     background-color: black;
   }
+.discover {
+  color: $black_color;
+  font-size: 36px;
+  font: 36px/42px $main_font;
+  font-weight: 700;
+  margin-bottom: 102px;
 }

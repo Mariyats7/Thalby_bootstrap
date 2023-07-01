@@ -82,62 +82,180 @@ header ul li {
   color: #000000;
 }
 
-.container {
+.cards-sellers {
   margin-bottom: 240px;
 }
-.container .best-sellers {
+.cards-sellers .best-sellers {
   margin-bottom: 52px;
   font: 36px/42px "Roboto", sans-serif;
   font-weight: 700;
   color: #000000;
 }
-.container .cards {
+.cards-sellers .cards {
   max-width: 309px;
   margin-bottom: 27px;
 }
-.container .card_h4 {
+.cards-sellers .card_h4 {
   font: 17px/20px "Roboto", sans-serif;
   font-weight: 700;
   color: #000000;
   margin-bottom: 17px;
+  width: 156px;
 }
-.container .card_p {
+.cards-sellers .card_p {
   font: 17px/20px "Roboto", sans-serif;
   font-weight: 400;
   color: #000000;
   margin-bottom: 10px;
 }
-.container .card_a {
+.cards-sellers .card_a {
   font: 17px/20px "Roboto", sans-serif;
   font-weight: 700;
   text-decoration-line: underline;
   color: #000000;
 }
-.container .circle {
+
+.people_cards .container {
+  max-width: 100%;
+}
+
+.people_society {
+  background: rgba(204, 204, 204, 0.3);
+}
+.people_society h3 {
+  color: #000000;
+  font: 36px/42px "Roboto", sans-serif;
+  font-weight: 700;
+  padding-bottom: 31px;
+}
+.people_society p {
+  color: #000000;
+  font: 36px/42px "Roboto", sans-serif;
+  font-weight: 400;
+  padding-bottom: 40px;
+  width: 498px;
+}
+.people_society a {
+  color: #000000;
+  font: 17px/20px "Roboto", sans-serif;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+.people_society img {
+  padding-bottom: 51px;
+  padding-top: 76px;
+}
+
+.culture {
+  background: rgba(204, 204, 204, 0.6);
+}
+.culture h3 {
+  color: #000000;
+  font: 36px/42px "Roboto", sans-serif;
+  font-weight: 700;
+  padding-bottom: 31px;
+}
+.culture p {
+  color: #000000;
+  font: 36px/42px "Roboto", sans-serif;
+  font-weight: 400;
+  padding-bottom: 40px;
+  width: 513px;
+}
+.culture a {
+  color: #000000;
+  font: 17px/20px "Roboto", sans-serif;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+.culture img {
+  padding-bottom: 51px;
+  padding-top: 76px;
+}
+
+.politics {
+  background: rgba(204, 204, 204, 0.3);
+}
+.politics h3 {
+  color: #000000;
+  font: 36px/42px "Roboto", sans-serif;
+  font-weight: 700;
+  padding-bottom: 31px;
+}
+.politics p {
+  color: #000000;
+  font: 36px/42px "Roboto", sans-serif;
+  font-weight: 400;
+  padding-bottom: 40px;
+  max-width: 530px;
+}
+.politics a {
+  color: #000000;
+  font: 17px/20px "Roboto", sans-serif;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+.politics img {
+  padding-bottom: 51px;
+  padding-top: 76px;
+}
+
+.unique {
+  color: #000000;
+  font: 36px/42px "Roboto", sans-serif;
+  font-weight: 400;
+  margin-bottom: 70px;
+  margin-top: 190px;
+}
+
+.text_circle {
+  color: #000000;
+  font-size: 30px/35px "Roboto", sans-serif;
+  font-weight: 700;
+  margin-bottom: 111px;
+}
+
+.circle {
   width: 70px;
   height: 70px;
   border-radius: 35px;
+  margin-bottom: 26px;
 }
-.container .light-blue {
+
+.light-blue {
   background: #D399FF;
 }
-.container .blue {
+
+.blue {
   background: #33D3BC;
 }
-.container .dark-blue {
+
+.dark-blue {
   background: #18A5C6;
 }
-.container .beige {
+
+.beige {
   background: #D38F62;
 }
-.container .red {
+
+.red {
   background: #F94C43;
 }
-.container .violet {
+
+.violet {
   background: #D399FF;
 }
-.container footer {
+
+footer {
   background-color: black;
+}
+
+.discover {
+  color: #000000;
+  font-size: 36px;
+  font: 36px/42px "Roboto", sans-serif;
+  font-weight: 700;
+  margin-bottom: 102px;
 }
 
 /*# sourceMappingURL=style.css.map */
