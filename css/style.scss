@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet');
-@import "../css/bootstrap.css";
+@import "bootstrap.css";
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
 $main_font: 'Roboto', sans-serif;
 $black_color: #000000;
 
@@ -271,13 +273,98 @@ header {
     background: #D399FF;
   }
 
-  footer{
-    background-color: black;
+.card-voices {
+    background: linear-gradient(white 50%, #F0F0F0 50%);
+    .discover-part {
+      color: $black_color;
+      font-size: 36px;
+      font: 36px/42px $main_font;
+      font-weight: 700;
+      margin-bottom: 102px;
+    }
+
+    Img {
+      width: 288px;
+      margin-bottom: 35px;
+    }
+
+    h4 {
+      color: $black_color;
+      font: 24px/28px $main_font;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      margin-bottom: 35px;
+    }
+
+    p {
+      color: $black_color;
+      font: 20px/23px $main_font;
+      font-weight: 400;
+      margin-bottom: 44px;
+    }
+
+    a {
+      color: $black_color;
+      font-size: 18px/21px $main_font;
+      font-weight: 700;
+      text-decoration-line: underline;
+    }
   }
-.discover {
-  color: $black_color;
-  font-size: 36px;
-  font: 36px/42px $main_font;
-  font-weight: 700;
-  margin-bottom: 102px;
+.keep_in_touch {
+  margin-bottom: 88px;
+  margin-top: 80px;
+  h2{
+    color: $black_color;
+    font: 36px/42px $main_font;
+    font-weight: 700;
+  }
+  p{
+    color: $black_color;
+    font: 17px/20px $main_font;
+    font-weight: 700;
+    margin-bottom: 26px;
+  }
+  button {
+    border-radius: 100px;
+    border: 1px solid $black_color;
+    background: $black_color;
+    color: #FFF;
+    font: 14px/16px $main_font;
+    font-weight: 400;
+    padding: 8px 23px;
+  }
+}
+
+footer {
+  background-color: black;
+
+  .footer-logo {
+    margin-bottom: 37px;
+  }
+  .social{
+    padding-right: 20px;
+  }
+  ul{
+    li{
+      color: #FFF;
+      font-size: 14px/16px $main_font;
+      font-weight: 400;
+      text-decoration: none;
+      list-style: none;
+      line-height: 30px;
+      a{
+        color: #FFF;
+      }
+    }
+  }
+  p{
+    color: #FFF;
+    text-align: center;
+    font-size: 14px/16px $main_font;
+    font-weight: 400;
+    line-height: 23.1px;
+  }
+  .about {
+    margin-bottom: 36px;
+  }
 }

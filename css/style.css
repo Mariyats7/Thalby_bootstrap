@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet');
-@import "../css/bootstrap.css";
+@import "bootstrap.css";
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
 .container {
   max-width: 1064px;
 }
@@ -246,16 +248,94 @@ header ul li {
   background: #D399FF;
 }
 
-footer {
-  background-color: black;
+.card-voices {
+  background: linear-gradient(white 50%, #F0F0F0 50%);
 }
-
-.discover {
+.card-voices .discover-part {
   color: #000000;
   font-size: 36px;
   font: 36px/42px "Roboto", sans-serif;
   font-weight: 700;
   margin-bottom: 102px;
+}
+.card-voices Img {
+  width: 288px;
+  margin-bottom: 35px;
+}
+.card-voices h4 {
+  color: #000000;
+  font: 24px/28px "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin-bottom: 35px;
+}
+.card-voices p {
+  color: #000000;
+  font: 20px/23px "Roboto", sans-serif;
+  font-weight: 400;
+  margin-bottom: 44px;
+}
+.card-voices a {
+  color: #000000;
+  font-size: 18px/21px "Roboto", sans-serif;
+  font-weight: 700;
+  text-decoration-line: underline;
+}
+
+.keep_in_touch {
+  margin-bottom: 88px;
+  margin-top: 80px;
+}
+.keep_in_touch h2 {
+  color: #000000;
+  font: 36px/42px "Roboto", sans-serif;
+  font-weight: 700;
+}
+.keep_in_touch p {
+  color: #000000;
+  font: 17px/20px "Roboto", sans-serif;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.keep_in_touch button {
+  border-radius: 100px;
+  border: 1px solid #000000;
+  background: #000000;
+  color: #FFF;
+  font: 14px/16px "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 8px 23px;
+}
+
+footer {
+  background-color: black;
+}
+footer .footer-logo {
+  margin-bottom: 37px;
+}
+footer .social {
+  padding-right: 20px;
+}
+footer ul li {
+  color: #FFF;
+  font-size: 14px/16px "Roboto", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+  line-height: 30px;
+}
+footer ul li a {
+  color: #FFF;
+}
+footer p {
+  color: #FFF;
+  text-align: center;
+  font-size: 14px/16px "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 23.1px;
+}
+footer .about {
+  margin-bottom: 36px;
 }
 
 /*# sourceMappingURL=style.css.map */
