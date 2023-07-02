@@ -131,6 +131,12 @@ header .nav-link {
     width: auto;
   }
 }
+@media screen and (max-width: 990px) {
+  .people_cards .text-cards {
+    align-items: center !important;
+    text-align: center !important;
+  }
+}
 
 .people_society {
   background: rgba(204, 204, 204, 0.3);

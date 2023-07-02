@@ -159,6 +159,12 @@ header {
       }
     }
   }
+  .text-cards{
+    @include max-screen(990px) {
+      align-items: center !important;
+      text-align: center !important;
+    }
+  }
 }
   .people_society {
     background: rgba(204, 204, 204, 0.30);
