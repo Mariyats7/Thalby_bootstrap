@@ -10,13 +10,14 @@ header ul li {
   font: 16px/26px "Roboto", sans-serif;
   font-weight: 700;
 }
-
-.navbar-light .navbar-nav .nav-link {
+header .navbar-light .navbar-nav .nav-link {
   color: #1C1B1B;
 }
-
-.inst {
-  padding-top: 9px;
+header .inst {
+  padding-top: 10px;
+}
+header .nav-link {
+  padding: 0;
 }
 
 .main_banner {
@@ -51,6 +52,8 @@ header ul li {
 .humanity .first-img {
   max-width: 599px;
   height: 521px;
+  object-fit: scale-down;
+  width: 100%;
 }
 @media screen and (min-width: 992px) {
   .humanity .first-img {
@@ -120,6 +123,14 @@ header ul li {
 .people_cards .container {
   max-width: 100%;
 }
+@media screen and (max-width: 990px) {
+  .people_cards .img-cards {
+    justify-content: center !important;
+  }
+  .people_cards .img-cards img {
+    width: auto;
+  }
+}
 
 .people_society {
   background: rgba(204, 204, 204, 0.3);
@@ -135,7 +146,7 @@ header ul li {
   font: 36px/42px "Roboto", sans-serif;
   font-weight: 400;
   padding-bottom: 40px;
-  width: 498px;
+  max-width: 498px;
 }
 .people_society a {
   color: #000000;
@@ -162,7 +173,7 @@ header ul li {
   font: 36px/42px "Roboto", sans-serif;
   font-weight: 400;
   padding-bottom: 40px;
-  width: 513px;
+  max-width: 513px;
 }
 .culture a {
   color: #000000;

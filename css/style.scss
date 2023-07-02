@@ -10,7 +10,11 @@ $black_color: #000000;
     @content;
   }
 }
-
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 .container {
   max-width: 1064px;
 }
@@ -21,13 +25,20 @@ header {
       font-weight: 700;
     }
   }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #1C1B1B;
+  }
+
+  .inst {
+    padding-top: 10px;
+  }
+
+  .nav-link {
+    padding: 0;
+  }
 }
-.navbar-light .navbar-nav .nav-link {
-  color: #1C1B1B;
-}
-.inst{
-  padding-top: 9px;
-}
+
 .main_banner {
   background: #F0EFEB;
   padding: 90px 0;
@@ -63,6 +74,8 @@ header {
   .first-img {
     max-width: 599px;
     height: 521px;
+    object-fit: scale-down;
+    width: 100%;
     @include min-screen(992px) {
       left: 60px;
       top: -70px;
@@ -135,6 +148,17 @@ header {
   .container {
     max-width: 100%;
   }
+
+  .img-cards {
+    @include max-screen(990px) {
+      justify-content: center !important;
+
+      img {
+        width: auto;
+
+      }
+    }
+  }
 }
   .people_society {
     background: rgba(204, 204, 204, 0.30);
@@ -151,7 +175,7 @@ header {
       font: 36px/42px $main_font;
       font-weight: 400;
       padding-bottom: 40px;
-      width: 498px;
+      max-width: 498px;
 
     }
 
@@ -183,7 +207,7 @@ header {
       font: 36px/42px $main_font;
       font-weight: 400;
       padding-bottom: 40px;
-      width: 513px;
+      max-width: 513px;
     }
 
     a {
@@ -196,6 +220,7 @@ header {
     img {
       padding-bottom: 51px;
       padding-top: 76px;
+
     }
   }
 
@@ -227,6 +252,7 @@ header {
     img {
       padding-bottom: 51px;
       padding-top: 76px;
+      
     }
   }
 .unique {
